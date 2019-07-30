@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>KSEP - Главная</title>
+  @@include('_include/page_head.html')
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main role="main">
+
+      <div class="uk-container">
+
+
+        <!-- <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
+          <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+          </div>
+          <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+          </div>
+          <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+          </div>
+        </div> -->
+
+
+      </div>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <h3>Title</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

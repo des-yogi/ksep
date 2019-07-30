@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  white-space: nowrap;
+  width: 219px;
+  height: 34px;
+
+  @media (min-width: $screen-md) {
+    width: 258px;
+    height: 40px;
+  }
+
+  @media (min-width: $screen-xl) {
+    width: 361px;
+    height: 56px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  img {
+    width: 100%;
+  }
+}
