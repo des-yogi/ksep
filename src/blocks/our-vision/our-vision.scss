@@ -1,0 +1,27 @@
+.our-vision {
+  //background-color: $main-color;
+
+  @media (min-width: $screen-md) {
+    background: linear-gradient(to right, $main-color, $main-color calc(50% - 17.5px), $white calc(50% - 17.5px));
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    padding: 0 20px;
+
+    @media (min-width: $screen-md) {
+      padding: 20px;
+    }
+  }
+
+  &__text {
+
+  }
+}

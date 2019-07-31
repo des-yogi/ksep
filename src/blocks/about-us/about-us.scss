@@ -1,0 +1,47 @@
+.about-us {
+  color: $white;
+  background-color: $second-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    color: inherit;
+  }
+
+  &__img-wrapper {
+     padding-top: 35px;
+     padding-right: 50px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 55px;
+      padding-right: 85px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 45px;
+      padding-right: 65px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 65px;
+      padding-right: 105px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    box-shadow: 50px -35px 0 0 $white;
+
+    @media (min-width: $screen-md) {
+      box-shadow: 85px -55px 0 0 $white;
+    }
+
+    @media (min-width: $screen-lg) {
+      box-shadow: 65px -45px 0 0 $white;
+    }
+
+    @media (min-width: $screen-xl) {
+      box-shadow: 105px -65px 0 0 $white;
+    }
+  }
+}

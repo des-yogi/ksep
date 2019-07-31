@@ -5,7 +5,17 @@
     "logo": [],
     "sprite-svg": [],
     "object-fit-polyfill": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "burger": [],
+    "lang-switcher": [],
+    "about-us": [],
+    "our-vision": [],
+    "about-program": [],
+    "partners": [],
+    "team-item": [],
+    "offcanvas-menu": [],
+    "main-nav": [],
+    "scaffolding": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -14,10 +24,8 @@
     "./src/scss/mixins.scss",
     "../../node_modules/uikit/src/scss/uikit-theme.scss"
   ],
-  "addCssAfter": [
-  ],
-  "singleCompiled": [
-  ],
+  "addCssAfter": [],
+  "singleCompiled": [],
   "addJsBefore": [
     "./node_modules/uikit/dist/js/uikit.js",
     "./node_modules/uikit/dist/js/uikit-icons.js",

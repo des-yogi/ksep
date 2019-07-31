@@ -1,0 +1,43 @@
+.offcanvas-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-nav {
+    margin-top: 20px;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-weight: 400;
+    }
+
+    .uk-active {
+
+      a {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__copyrights {
+    margin-top: auto;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__btn {
+    align-self: flex-start;
+    background-color: $main-color !important;
+
+    &:hover,
+    &:focus {
+      color: $white !important;
+      background-color: $btn-bg--hover !important;
+    }
+  }
+}

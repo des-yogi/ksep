@@ -1,0 +1,8 @@
+.scaffolding {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-button-default {
+    border-color: $second-color;
+  }
+}
