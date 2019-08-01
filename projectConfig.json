@@ -15,7 +15,10 @@
     "team-item": [],
     "offcanvas-menu": [],
     "main-nav": [],
-    "scaffolding": []
+    "scaffolding": [],
+    "intro-media": [],
+    "breadcrumbs": [],
+    "programs-text-block": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

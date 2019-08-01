@@ -1,9 +1,20 @@
-// В этом файле должны быть стили для БЭМ-блока team-item, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .team-item {
 
   $block-name:                &; // #{$block-name}__element
 
+  .uk-card-media-top {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .uk-card-body {
+    padding: 20px;
+
+    @media (min-width: $screen-xl) {
+      padding: 30px 20px;
+    }
+  }
 }

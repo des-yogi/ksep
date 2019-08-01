@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="page scaffolding" lang="Eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>KSEP - Главная</title>
+  @@include('_include/page_head.html')
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main  main--noindex" role="main">
+
+      <div class="uk-container  breadcrumbs">
+        <ul class="uk-breadcrumb">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Сторінка 1</a></li>
+          <li class="uk-disabled"><a>Disabled</a></li>
+          <li><span>Поточна сторінка</span></li>
+        </ul>
+      </div>
+
+      <div class="intro-media  uk-margin-medium-bottom">
+        <div class="uk-container">
+          <div class="uk-child-width-1-1  uk-child-width-1-2@m" data-uk-grid>
+
+            <div>
+              <h1>Програми</h1>
+              <p>“Публічне адміністрування в енергетиці” – перша програма Київської школи енергетичної політики, яка стартуватиме в лютому 2020-го року. Її мета –  дати імпульс до формування професійної спільноти агентів змін у сфері енергетичної політики, мотивованих та компетентних впроваджувати законодавство ЄС в Україні.</p>
+              <p>“Публічне адміністрування в енергетиці” – перша програма Київської школи енергетичної політики, яка стартуватиме в лютому 2020-го року. Її мета –  дати імпульс до формування професійної спільноти агентів змін у сфері енергетичної політики, мотивованих та компетентних впроваджувати законодавство ЄС в Україні.</p>
+              <div class="intro-media__btn-wrapper  uk-margin-medium-top">
+                <a href="program-modules.html" class="uk-button uk-button-default uk-button-small">Модулі програми</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="intro-media__img-decor">
+                <div class="embed-responsive  embed-responsive--skewed  intro-media__img">
+                  <picture>
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 480px)">
+
+                    <source srcset="img/intro-media-img.webp" type="image/webp">
+                    <img src="img/intro-media-img.jpg" alt="Image name">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="intro-media__line"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      <nav class="offcanvas-menu">
+        <ul class="offcanvas-menu__list  uk-nav">
+          <li class="uk-active"><a href="#">Головна</a></li>
+          <li><a href="#">Програми</a></li>
+          <li><a href="#">Контакти</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <a href="#" class="offcanvas-menu__btn  uk-button uk-button-primary uk-button-small uk-margin-medium-top">Заявка на участь</a>
+
+        <span class="offcanvas-menu__copyrights">© 2020. Kyiv School of Energy Policy</span>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div id="search-modal-full" class="uk-modal-full uk-modal uk-padding-remove" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <button class="uk-modal-close-full" type="button" uk-close></button>
+      <form class="uk-search uk-search-large">
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>
+      </form>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

@@ -32,4 +32,11 @@
       padding-top: percentage(3 / 4);
     }
   }
+
+  &--skewed {
+
+    &::before {
+      padding-top: percentage(1 / 2.23);
+    }
+  }
 }

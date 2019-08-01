@@ -1,5 +1,9 @@
 .page-header {
 
+  @media (min-width: $screen-xl) {
+    border-bottom: 2px solid $main-color;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   .uk-container {
@@ -8,7 +12,12 @@
 
   &__inner-bg {
 
+    @media (min-width: $screen-md) {
+      margin-bottom: 20px;
+    }
+
     @media (min-width: $screen-xl) {
+      margin-bottom: 0;
       background: linear-gradient(to right, $second-color, $second-color 50%, $white 50%);
     }
   }

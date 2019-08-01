@@ -1,8 +1,8 @@
 .our-vision {
-  //background-color: $main-color;
+  // background-color: $main-color;
 
   @media (min-width: $screen-md) {
-    background: linear-gradient(to right, $main-color, $main-color calc(50% - 17.5px), $white calc(50% - 17.5px));
+    background: linear-gradient(to right, $main-color, $main-color 50%, $white 50%);
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -22,6 +22,14 @@
   }
 
   &__text {
+    padding-left: 0;
 
+    @media (min-width: $screen-md) {
+      padding-left: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+    }
   }
 }
