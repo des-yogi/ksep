@@ -1,14 +1,16 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/offcanvas-menu/offcanvas-menu.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="offcanvas-menu">content</div>
-
 -->
+
+<nav class="offcanvas-menu">
+  <ul class="offcanvas-menu__list  uk-nav">
+    <li class="uk-active"><a href="index.html">Головна</a></li>
+    <li><a href="programs.html">Програми</a></li>
+    <li><a href="contacts.html">Контакти</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+
+  <a href="#" class="offcanvas-menu__btn  uk-button uk-button-primary uk-button-small uk-margin-medium-top">Заявка на участь</a>
+
+  <span class="offcanvas-menu__copyrights">© 2020. Kyiv School of Energy Policy</span>
+</nav>

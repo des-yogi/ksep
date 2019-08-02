@@ -1,0 +1,75 @@
+.faq {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__contents {
+
+  }
+
+  &__list {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      align-content: flex-start;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 20px;
+    color: $second-color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      width: calc(50% - 17.5px);
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+
+    @media (min-width: $screen-xl) {
+      padding-right: 410px;
+    }
+
+    #{$block-name}__list-item {
+      padding-bottom: 20px;
+      margin-bottom: 35px;
+      width: 100%;
+      font-size: 20px;
+      border-bottom: 2px solid $main-color;
+
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+      }
+
+      p + p {
+        margin-bottom: 0;
+      }
+
+      ul,
+      ol {
+        margin-top: 20px;
+
+        & > li {
+          font-size: 16px;
+          font-weight: 400;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

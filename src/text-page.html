@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html class="page scaffolding" lang="Eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>KSEP - Статья</title>
+  @@include('_include/page_head.html')
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main  main--noindex" role="main">
+
+      <div class="uk-container  breadcrumbs">
+        <ul class="uk-breadcrumb">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Сторінка 1</a></li>
+          <li class="uk-disabled"><a>Disabled</a></li>
+          <li><span>Поточна сторінка</span></li>
+        </ul>
+      </div>
+
+      <article class="article  uk-margin-xlarge-bottom">
+
+        <div class="uk-container">
+
+          <h1>Текстова сторінка</h1>
+          <p class="uk-text-meta">22 Лют, 2019</p>
+
+          <div class="article__content">
+            <h2>Далеко-далеко за словесными горами в стране.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="article__img">
+              <img
+                data-src="img/image.jpg"
+                data-srcset="img/image.jpg 480w,
+                             img/image.jpg 600w,
+                             img/image.jpg 700w"
+                sizes="(min-width: 320px) 480px,
+                       (min-width: 480px) 600px,
+                       (min-width: 768px) 700px, 100vw"
+                width="700" alt="Картинка в статье" uk-img>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="embed-responsive">
+              <iframe src="https://www.youtube.com/embed/7pOr3dBFAeY" allowfullscreen frameborder="0" uk-responsive uk-video></iframe>
+            </div>
+
+            <table class="uk-table uk-table-divider">
+              <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+                <tr>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                  <td>Table Data</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      @@include('blocks/offcanvas-menu/offcanvas-menu.html')
+
+    </div>
+
+  </div>
+
+  <div id="search-modal-full" class="uk-modal-full uk-modal uk-padding-remove" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <button class="uk-modal-close-full" type="button" uk-close></button>
+      <form class="uk-search uk-search-large">
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>
+      </form>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

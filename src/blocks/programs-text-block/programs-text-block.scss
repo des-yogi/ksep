@@ -1,9 +1,31 @@
-// В этом файле должны быть стили для БЭМ-блока programs-text-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .programs-text-block {
 
   $block-name:                &; // #{$block-name}__element
 
+  h3 {
+    color: $second-color;
+  }
+
+  & > .uk-container {
+    border-left: 4px solid $main-color;
+    border-right: 4px solid $main-color;
+
+    @media (min-width: $screen-md) {
+      border: none;
+    }
+  }
+
+  &__inner {
+    padding-top: 20px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 20px 40px 1px;
+      border-left: 4px solid $main-color;
+      border-right: 4px solid $main-color;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-right: 410px;
+    }
+  }
 }

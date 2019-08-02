@@ -4,11 +4,11 @@
  * Читайте ./README.md для понимания.
  */
 
-@import './src/scss/variables.scss';
 @import '../../node_modules/uikit/src/scss/variables-theme.scss';
 @import '../../node_modules/uikit/src/scss/mixins-theme.scss';
-@import './src/scss/mixins.scss';
 @import '../../node_modules/uikit/src/scss/uikit-theme.scss';
+@import './src/scss/variables.scss';
+@import './src/scss/mixins.scss';
 @import './src/blocks/page-header/page-header.scss';
 @import './src/blocks/page-footer/page-footer.scss';
 @import './src/blocks/logo/logo.scss';
@@ -28,3 +28,7 @@
 @import './src/blocks/intro-media/intro-media.scss';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/programs-text-block/programs-text-block.scss';
+@import './src/blocks/activity-list-block/activity-list-block.scss';
+@import './src/blocks/modules-block/modules-block.scss';
+@import './src/blocks/faq/faq.scss';
+@import './src/blocks/article/article.scss';

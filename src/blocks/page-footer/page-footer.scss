@@ -2,10 +2,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  & > .uk-container {
-    //border-bottom: 2px solid red;
-  }
-
   .uk-link-text {
     font-size: 14px;
     color: $title-color;
@@ -14,9 +10,6 @@
     &:focus {
       color: $link-color--hover;
     }
-  }
-
-  &__top {
   }
 
   &__link-info {
@@ -32,15 +25,18 @@
       linear-gradient(to right, $white, $white 50%, transparent 50%),
       linear-gradient(to top, $main-color, $main-color 40px, $white 40px);
 
-      @media (min-width: $screen-md) {
-        background:
-          linear-gradient(to right, $white, $white 75%, transparent 75%),
-          linear-gradient(to bottom, $main-color, $main-color 40px, $white 40px);
-      }
+    @media (min-width: $screen-md) {
+      background:
+        linear-gradient(to right, $white, $white 75%, transparent 75%),
+        linear-gradient(to bottom, $main-color, $main-color 40px, $white 40px);
+    }
+  }
 
-      @media (min-width: $screen-xl) {
-        background: none;
-      }
+  &__text {
+
+    .uk-list {
+      font-size: 14px;
+    }
   }
 
   &__content {

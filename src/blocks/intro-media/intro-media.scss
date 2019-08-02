@@ -11,10 +11,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__btn-wrapper {
-
-  }
-
   &__img-decor {
     position: relative;
     box-shadow: 15px 0 0 0 $second-color;
@@ -78,5 +74,9 @@
     @media (min-width: $screen-xl) {
       box-shadow: 30px 0 0 0 $main-color;
     }
+  }
+
+  &--bottom {
+    border: none;
   }
 }

@@ -1,0 +1,43 @@
+.activity-list-block {
+  background: linear-gradient(to bottom, $second-color, $second-color 50%, $white 50%);
+
+  @media (min-width: $screen-xl) {
+    padding: 0;
+    background: linear-gradient(to right, $second-color, $second-color calc(50% - 18.5px), $white calc(50% - 18.5px));
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__bg {
+    position: relative;
+    padding-bottom: 40px;
+    background-color: $second-color;
+    box-shadow: 15px 0 0 0 $second-color;
+
+    &::after {
+
+      @media (min-width: $screen-xl) {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -27.5%;
+        //width: 220px;
+        width: 27.5%;
+        height: 100%;
+        background: linear-gradient(to right top, $second-color, $second-color 50%, rgba(255, 255, 255, 0) 50%);
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      box-shadow: none;
+    }
+
+    & > * {
+      color: $white;
+    }
+  }
+}

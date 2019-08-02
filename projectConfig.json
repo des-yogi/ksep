@@ -18,14 +18,18 @@
     "scaffolding": [],
     "intro-media": [],
     "breadcrumbs": [],
-    "programs-text-block": []
+    "programs-text-block": [],
+    "activity-list-block": [],
+    "modules-block": [],
+    "faq": [],
+    "article": []
   },
   "addCssBefore": [
-    "./src/scss/variables.scss",
     "../../node_modules/uikit/src/scss/variables-theme.scss",
     "../../node_modules/uikit/src/scss/mixins-theme.scss",
-    "./src/scss/mixins.scss",
-    "../../node_modules/uikit/src/scss/uikit-theme.scss"
+    "../../node_modules/uikit/src/scss/uikit-theme.scss",
+    "./src/scss/variables.scss",
+    "./src/scss/mixins.scss"
   ],
   "addCssAfter": [],
   "singleCompiled": [],
