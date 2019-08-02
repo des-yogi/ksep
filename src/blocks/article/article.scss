@@ -1,0 +1,52 @@
+.article {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    margin: 40px 0;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      //bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 100%;
+      background-color: $main-color;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 600px;
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: 700px;
+    }
+  }
+
+  &__content {
+
+    @media (min-width: $screen-xl) {
+      padding-right: 410px;
+    }
+
+    .embed-responsive {
+      margin: 40px 0;
+
+      @media (min-width: $screen-md) {
+        max-width: 480px;
+      }
+
+      @media (min-width: $screen-xl) {
+        max-width: 580px;
+      }
+    }
+  }
+}

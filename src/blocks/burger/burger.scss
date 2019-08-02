@@ -1,0 +1,13 @@
+.burger {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    padding-left: 0;
+    margin-left: 20px;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+    }
+  }
+}

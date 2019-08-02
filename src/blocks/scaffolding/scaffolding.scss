@@ -1,0 +1,101 @@
+.scaffolding {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @font-face {
+    font-display: fallback;
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
+         url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue Medium'), local('Helvetica-Neue-Medium'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
+         url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .main {
+
+    &.main--noindex {
+      padding-top: 20px;
+
+      @media (min-width: $screen-md) {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+
+  .uk-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+
+  .uk-button-default {
+    border-color: $second-color;
+  }
+
+  ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: myCounter;
+
+    & > li {
+
+      &::before {
+        display: inline-block;
+        vertical-align: baseline;
+        margin-right: 0.5rem;
+        counter-increment: myCounter;
+        content: counter(myCounter)".";
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 700;
+        text-align: left;
+        line-height: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+}
+

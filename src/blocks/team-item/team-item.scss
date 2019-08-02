@@ -1,0 +1,20 @@
+.team-item {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-card-media-top {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .uk-card-body {
+    padding: 20px;
+
+    @media (min-width: $screen-xl) {
+      padding: 30px 20px;
+    }
+  }
+}

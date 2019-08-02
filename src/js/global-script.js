@@ -1,27 +1,15 @@
-// Если на проекте jQuery
-// $( document ).ready(function() {
-//   // code
-// });
-
-// Изоляция без jQuery
-// (function(){
-//   // code
-// }());
-
-// На проекте нет jQuery, но хочется $( document ).ready...
-// function ready(fn) {
-//   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-//     fn();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn);
-//   }
-// }
-//
-// ready(function(){
-//   // code
-// });
-
 (function(){
   // code
 
 }());
+
+UIkit.util.ready(function () {
+  var bar = document.getElementById('js-progressbar');
+  if (!bar) { return; }
+  var animate = setInterval(function () {
+      bar.value += 10;
+      if (bar.value >= bar.max) {
+          clearInterval(animate);
+      }
+  }, 1000);
+});

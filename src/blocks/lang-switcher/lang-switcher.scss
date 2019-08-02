@@ -1,0 +1,61 @@
+.lang-switcher {
+  min-width: auto;
+  padding: 10px 25px ;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-nav a {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 3px 25px 3px 20px;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 15px;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 4px solid $main-color;
+    border-right: 4px solid $main-color;
+    cursor: pointer;
+
+    @media (min-width: $screen-md) {
+      margin-left: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      border-right: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: $link-color--hover;
+
+      &::after {
+        background: svg-load('../blocks/sprite-svg/svg/bottom-icon.svg', fill=$link-color--hover);
+      }
+    }
+
+    &.uk-open {
+
+      &::after {
+        background: svg-load('../blocks/sprite-svg/svg/top-icon.svg', fill=$text-color);
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 5px;
+      background: svg-load('../blocks/sprite-svg/svg/bottom-icon.svg', fill=$text-color);
+    }
+  }
+}

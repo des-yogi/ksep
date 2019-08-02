@@ -4,20 +4,49 @@
 
 <header class="page-header" role="banner">
 
-  <div class="uk-container uk-margin-top uk-margin-bottom">
-    <div data-uk-grid>
-      <div class="uk-width-auto uk-flex uk-flex-left uk-flex-middle uk-background-secondary">
-        <a class="logo" href="#" title="KSEP">
-          <img src="img/ksep-logo-ondark-ru.svg" alt="Alt text">
-        </a>
+  <div class="page-header__inner-bg">
+    <div class="uk-container uk-margin-top uk-margin-auto-vertical@xl">
+
+      <div class="uk-flex uk-flex-between  uk-flex-middle" data-uk-grid>
+
+        <div class="logo__wrapper  uk-width-auto uk-background-secondary">
+          <a class="logo  logo--decor" href="index.html" title="KSEP">
+            <img src="img/ksep-logo-ondark-ru.svg" alt="Alt text">
+          </a>
+        </div>
+
+        <div class="burger__wrapper  uk-flex uk-flex-right uk-flex-middle uk-flex-last@m uk-hidden@xl">
+          <a class="burger  uk-icon uk-navbar-toggle-icon" href="#offcanvas-reveal" data-uk-toggle>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="10.8" width="24" height="2.5"></rect><rect y="3.6" width="24" height="2.5"></rect><rect y="18" width="24" height="2.5"></rect></svg>
+          </a>
+        </div>
+
+        <div class="page-header__service uk-width uk-width-auto@m uk-padding-small-vertical uk-margin-auto-vertical uk-margin-auto-left@m">
+          <a class="#" href="#search-modal-full" data-uk-search-icon data-uk-toggle></a>
+          <button id="lang-switcher-toggler" class="lang-switcher__btn" type="button">Lang</button>
+          <div id="lang-switcher" class="lang-switcher" uk-dropdown="mode: click">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li><a href="#">Укр</a></li>
+              <li><a href="#">Eng</a></li>
+            </ul>
+          </div>
+          <a href="#" class="uk-button uk-button-primary uk-button-small uk-visible@xl uk-margin-small-left">Заявка на участь</a>
+        </div>
+
       </div>
-      <div class="uk-width-expand uk-width-auto@m uk-flex uk-flex-right uk-flex-middle uk-flex-last@m">
-        <a class="uk-icon uk-navbar-toggle-icon" href="#offcanvas-reveal" data-uk-toggle>
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="10.8" width="24" height="2.5"></rect><rect y="3.6" width="24" height="2.5"></rect><rect y="18" width="24" height="2.5"></rect></svg>
-        </a>
-      </div>
-      <div class="uk-width-auto@m uk-margin-top uk-margin-remove-top@m">S + L</div>
+
     </div>
   </div>
+
+  <nav class="main-nav  uk-container uk-visible@xl" uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="index.html">Головна</a></li>
+        <li><a href="programs.html">Програми</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
 
 </header>

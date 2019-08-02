@@ -1,0 +1,9 @@
+.partners {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    border-top: 2px solid $bg-muted;
+    border-bottom: 2px solid $bg-muted;
+  }
+}

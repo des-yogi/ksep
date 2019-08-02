@@ -1,0 +1,10 @@
+.breadcrumbs {
+  margin-bottom: 25px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+}
