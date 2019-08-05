@@ -22,7 +22,9 @@
     "activity-list-block": [],
     "modules-block": [],
     "faq": [],
-    "article": []
+    "article": [],
+    "contacts": [],
+    "page-404": []
   },
   "addCssBefore": [
     "../../node_modules/uikit/src/scss/variables-theme.scss",

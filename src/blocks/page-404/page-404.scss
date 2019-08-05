@@ -1,0 +1,31 @@
+.page-404 {
+  text-align: center;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .h1 {
+    color: $second-color;
+  }
+
+  .uk-text-lead {
+    font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 0 205px;
+    }
+  }
+
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 290px;
+
+    @media (min-width: $screen-xl) {
+      max-width: 350px;
+    }
+  }
+}

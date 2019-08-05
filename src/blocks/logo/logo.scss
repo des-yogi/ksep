@@ -2,17 +2,20 @@
   display: block;
   white-space: nowrap;
   width: 219px;
-  height: 34px;
+  min-height: 34px;
+  height: auto;
   padding-right: 5px;
 
   @media (min-width: $screen-md) {
     width: 258px;
-    height: 40px;
+    //height: 40px;
+    height: auto;
   }
 
   @media (min-width: $screen-xl) {
     width: 361px;
-    height: 56px;
+    //height: 56px;
+    height: auto;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -46,9 +49,5 @@
         width: 40px;
       }
     }
-  }
-
-  &--footer {
-
   }
 }
