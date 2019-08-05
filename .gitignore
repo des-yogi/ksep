@@ -1,10 +1,10 @@
-build/
 design/
 
 .Saved/
 _arc/
 bower_components/
 node_modules/
+!node_modules/uikit/src/
 package-lock.json
 .vscode/
 .DS_Store
