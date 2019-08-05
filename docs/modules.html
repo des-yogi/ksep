@@ -1,148 +1,368 @@
- <!DOCTYPE html><html class="page scaffolding" lang="Eng"><head>  <meta charset="utf-8">  <title>KSEP - Модули програмы</title>  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="keywords" content>
-  <meta name="robots" content="index,follow">
-  <!-- OpenGraph microdata
-  <meta property="og:url"      content="https://www.your-domain.com/your-page.html" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Your Website Title" />
-  <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-  <meta property="og:locale"        content="uk_UA" />
-  -->
-  <link href="css/style.min.css" rel="stylesheet" media="screen">
-  <meta name="description" content><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/site.webmanifest">
-<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
-<link rel="shortcut icon" href="/img/favicon.ico">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
-<meta name="msapplication-config" content="/img/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head><body>  <div class="uk-offcanvas-content">    <!--DEV
-    @ @include('blocks/page-header/page-header.html')
-    -->
-    <header class="page-header" role="banner">
-      <div class="page-header__inner-bg">
-        <div class="uk-container uk-margin-top uk-margin-auto-vertical@xl">
-          <div class="uk-flex uk-flex-between  uk-flex-middle" data-uk-grid>
-            <div class="logo__wrapper  uk-width-auto uk-background-secondary">
-              <a class="logo  logo--decor" href="index.html" title="KSEP">
-                <img src="img/ksep-logo-ondark-ru.svg" alt="Alt text">
-              </a>
+ <!DOCTYPE html>
+<html class="page scaffolding" lang="Eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>KSEP - Модули програмы</title>
+  @@include('_include/page_head.html')
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main  main--noindex" role="main">
+
+      <div class="uk-container  breadcrumbs">
+        <ul class="uk-breadcrumb">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Сторінка 1</a></li>
+          <li class="uk-disabled"><a>Disabled</a></li>
+          <li><span>Поточна сторінка</span></li>
+        </ul>
+      </div>
+
+      <div class="intro-media  uk-margin-medium-bottom">
+        <div class="uk-container">
+          <div class="intro-media__bg  uk-child-width-1-1  uk-child-width-1-2@m" data-uk-grid>
+
+            <div>
+              <h1>Публічне адміністрування в енергетиці</h1>
+              <h4>Пілотна і флагманська сертифікатна програма Київської школи енергетичної політики, яка пропонує всеохопну підготовку з правил, за якими функціонують та регулюються енергетичні ринки Європейського Союзу.</h4>
+
+              <p>Програма складається із 11 змістовних навчальних модулів, об’єднаних у три тематичні блоки:</p>
+
+              <ul class="uk-list uk-list-bullet">
+                <li>Законодавство та регулювання в енергетичній сфері ЄС; </li>
+                <li>Фінанси, економіка та інвестиції в енергетиці ЄС;</li>
+                <li>Базові професійні та менеджерські навички для ефективної роботи в енергетичній сфері.</li>
+              </ul>
+
+              <!-- <div class="intro-media__btn-wrapper  uk-margin-medium-top">
+                <a href="program-modules.html" class="uk-button uk-button-default uk-button-small">Модулі програми</a>
+              </div> -->
             </div>
-            <div class="burger__wrapper  uk-flex uk-flex-right uk-flex-middle uk-flex-last@m uk-hidden@xl">
-              <a class="burger  uk-icon uk-navbar-toggle-icon" href="#offcanvas-reveal" data-uk-toggle>
-                <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="10.8" width="24" height="2.5"/><rect y="3.6" width="24" height="2.5"/><rect y="18" width="24" height="2.5"/></svg>
-              </a>
+
+            <div>
+              <div class="intro-media__img-decor">
+                <div class="embed-responsive  embed-responsive--skewed  intro-media__img">
+                  <picture>
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 992px)">
+                    <!-- 580x260 -->
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 768px)">
+                    <!-- 461x207 -->
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 480px)">
+                    <!-- 737x354 -->
+                    <source srcset="img/intro-media-img.webp" type="image/webp">
+                    <img src="img/intro-media-img.jpg" alt="Image name" width="450" height="202">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="intro-media__line"></div>
             </div>
-            <div class="page-header__service uk-width uk-width-auto@m uk-padding-small-vertical uk-margin-auto-vertical uk-margin-auto-left@m">
-              <a class="#" href="#search-modal-full" data-uk-search-icon data-uk-toggle></a>
-              <button id="lang-switcher-toggler" class="lang-switcher__btn" type="button">Lang</button>
-              <div id="lang-switcher" class="lang-switcher" uk-dropdown="mode: click">
-                <ul class="uk-nav uk-dropdown-nav">
-                  <li><a href="#">Укр</a></li>
-                  <li><a href="#">Eng</a></li>
+
+          </div>
+        </div>
+
+      </div>
+
+      <section class="modules-block  uk-margin-xlarge-bottom">
+
+        <div class="uk-container">
+
+          <h2 class="modules-block__title">Навчальні модулі</h2>
+
+          <div class="modules-block__inner" data-uk-grid>
+
+            <div class="modules-block__controls  uk-width-1-1  uk-width-1-2@m  uk-width-1-3@xl">
+
+              <div class="modules-block__btn-wrapper uk-padding-small  uk-hidden@m">
+                <button class="uk-button uk-button-default uk-button-small" type="button">Модули програмы</button>
+              </div>
+
+              <div class="modules-block__dropdown-container" uk-drop="mode: click; pos: bottom-justify">
+                <ul class="modules-block__dropdown-list  uk-nav uk-nav-default" uk-switcher="connect: #program-item; animation: uk-animation-fade">
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Англійська мова</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">EU Energy Law and Markets</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Strategic Thinking</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">EU Energy Regulation</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Project Management</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Low-Carbon Development and Sustainability in Energy</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Public Office Communication and Ethics</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Human Capital and Inclusive Development</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Energy Economics</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Energy Finance and Investments</a>
+                  </li>
+                  <li class="modules-block__dropdown-item">
+                    <a href="#">Завершальна зустріч</a>
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="uk-button uk-button-primary uk-button-small uk-visible@xl uk-margin-small-left">Заявка на участь</a>
+
             </div>
-          </div>
-        </div>
-      </div>
-      <nav class="main-nav  uk-container uk-visible@xl" uk-navbar>
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="index.html">Головна</a></li>
-            <li><a href="programs.html">Програми</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="main  main--noindex" role="main">      <div class="uk-container  breadcrumbs">        <ul class="uk-breadcrumb">          <li><a href="#">Головна</a></li>          <li><a href="#">Сторінка 1</a></li>          <li class="uk-disabled"><a>Disabled</a></li>          <li><span>Поточна сторінка</span></li>        </ul>      </div>      <div class="intro-media  uk-margin-medium-bottom">        <div class="uk-container">          <div class="uk-child-width-1-1  uk-child-width-1-2@m" data-uk-grid>            <div>              <h1>Публічне адміністрування в енергетиці</h1>              <h4>Пілотна і флагманська сертифікатна програма Київської школи енергетичної політики, яка пропонує всеохопну підготовку з правил, за якими функціонують та регулюються енергетичні ринки Європейського Союзу.</h4>              <p>Програма складається із 11 змістовних навчальних модулів, об’єднаних у три тематичні блоки:</p>              <ul class="uk-list uk-list-bullet">                <li>Законодавство та регулювання в енергетичній сфері ЄС; </li>                <li>Фінанси, економіка та інвестиції в енергетиці ЄС;</li>                <li>Базові професійні та менеджерські навички для ефективної роботи в енергетичній сфері.</li>              </ul>              <!-- <div class="intro-media__btn-wrapper  uk-margin-medium-top">                <a href="program-modules.html" class="uk-button uk-button-default uk-button-small">Модулі програми</a>              </div> -->            </div>            <div>              <div class="intro-media__img-decor">                <div class="embed-responsive  embed-responsive--skewed  intro-media__img">                  <picture>                    <source srcset="img/intro-media-img.webp" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 992px)">                    <!-- 580x260 -->                    <source srcset="img/intro-media-img.webp" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 768px)">                    <!-- 461x207 -->                    <source srcset="img/intro-media-img.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 480px)">                    <!-- 737x354 -->                    <source srcset="img/intro-media-img.webp" type="image/webp">                    <img src="img/intro-media-img.jpg" alt="Image name" width="450" height="202">                  </picture>                </div>              </div>              <div class="intro-media__line"></div>            </div>          </div>        </div>      </div>      <section class="modules-block  uk-margin-xlarge-bottom">        <div class="uk-container">          <h2 class="modules-block__title">Навчальні модулі</h2>          <div class="modules-block__inner" data-uk-grid>            <div class="modules-block__controls  uk-width-1-1  uk-width-1-2@m  uk-width-1-3@xl">              <div class="modules-block__btn-wrapper uk-padding-small  uk-hidden@m">                <button class="uk-button uk-button-default uk-button-small" type="button">Модули програмы</button>              </div>              <div class="modules-block__dropdown-container" uk-drop="mode: click; pos: bottom-justify">                <ul class="modules-block__dropdown-list  uk-nav uk-nav-default" uk-switcher="connect: #program-item; animation: uk-animation-fade">                  <li class="modules-block__dropdown-item">                    <a href="#">Англійська мова</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">EU Energy Law and Markets</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Strategic Thinking</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">EU Energy Regulation</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Project Management</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Low-Carbon Development and Sustainability in Energy</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Public Office Communication and Ethics</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Human Capital and Inclusive Development</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Energy Economics</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Energy Finance and Investments</a>                  </li>                  <li class="modules-block__dropdown-item">                    <a href="#">Завершальна зустріч</a>                  </li>                </ul>              </div>            </div>            <div class="modules-block__content  uk-width-1-1  uk-width-1-2@m  uk-width-2-3@xl">              <ul id="program-item" class="modules-block__content-list  uk-switcher">                <li class="modules-block__content-item">                  <h3>Англійська мова</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>EU Energy Law and Markets</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Strategic Thinking</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>EU Energy Regulation</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Project Management</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Low-Carbon Development and Sustainability in Energy</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Public Office Communication and Ethics</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Human Capital and Inclusive Development</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Energy Economics</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Energy Finance and Investments</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>                <li class="modules-block__content-item">                  <h3>Завершальна зустріч</h3>                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <ul class="uk-list uk-list-bullet">                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                    <li>Lorem ipsum</li>                  </ul>                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>                  <p>                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>                  </p>                </li>              </ul>            </div>          </div>        </div>      </section>      <div class="intro-media  intro-media--bottom  uk-margin-xlarge-bottom">        <div class="uk-container">          <div class="uk-child-width-1-1  uk-child-width-1-2@m" data-uk-grid>            <div>              <h1>Приєднатися до програми</h1>              <p>Школа реалізується задля створення нової спільноти експертів з публічного управління енергетичним сектором в Україні, здатних та мотивованих впроваджувати енергетичне законодавство ЄС в Україні.</p>              <div class="intro-media__btn-wrapper  uk-margin-medium-top">                <p class="uk-text-bold">До закриття реєстрації залишилось <span id="time-left">___</span> днів</p>                <progress id="js-progressbar" class="uk-progress  uk-margin-medium-bottom" value="10" max="100"></progress>                <a href="program-modules.html" class="uk-button uk-button-default uk-button-small">Приєднатися</a>              </div>            </div>            <div>              <div class="intro-media__img-decor">                <div class="embed-responsive  embed-responsive--skewed  intro-media__img">                  <picture>                    <source srcset="img/intro-media-img.webp" media="(min-width: 992px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 992px)">                    <!-- 580x260 -->                    <source srcset="img/intro-media-img.webp" media="(min-width: 768px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 768px)">                    <!-- 461x207 -->                    <source srcset="img/intro-media-img.webp" media="(min-width: 480px)" type="image/webp">                    <source srcset="img/intro-media-img.jpg" media="(min-width: 480px)">                    <!-- 737x354 -->                    <source srcset="img/intro-media-img.webp" type="image/webp">                    <img src="img/intro-media-img.jpg" alt="Image name" width="450" height="202">                  </picture>                </div>              </div>              <div class="intro-media__line"></div>            </div>          </div>        </div>      </div>    </main>    <!--DEV
-    @ @include('blocks/page-footer/page-footer.html')
-    -->
-    <footer class="page-footer" role="contentinfo">
-      <div class="uk-container uk-margin-medium-bottom">
-        <div class="page-footer__top  uk-child-width-1-2@m uk-margin-small-top uk-margin-medium-bottom" data-uk-grid>
-          <div>
-            <a class="logo  logo--footer" href="index.html" title="KSEP">
-              <img src="img/ksep-logo-ru.svg" alt="KSEP лого">
-            </a>
-          </div>
-          <div class="page-footer__link-info">
-            <div class="uk-margin-small-bottom">
-              <a class="uk-link-text" href="#">Правила користування сайтом</a>
-            </div>
-            <div>
-              <a class="uk-link-text" href="#">Політика конфіденційності</a>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
-      <div class="page-footer__social-bg">
-        <div class="uk-container">
-          <div class="page-footer__content  uk-child-width-1-2@m">
-            <div class="page-footer__text">
-              <ul class="uk-list">
-                <li>
-                  <span class="uk-margin-small-right" uk-icon="mail"></span>
-                  <a class="uk-link-text" href="mailto:ksep@gmail.com">ksep@gmail.com</a></li>
-                <li>
-                  <span class="uk-margin-small-right" uk-icon="location"></span>Київ, вул. Інститутська 18А, офіс 3
+
+            <div class="modules-block__content  uk-width-1-1  uk-width-1-2@m  uk-width-2-3@xl">
+              <ul id="program-item" class="modules-block__content-list  uk-switcher">
+                <li class="modules-block__content-item">
+                  <h3>Англійська мова</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
                 </li>
-                <li>
-                  <span class="uk-margin-small-right" uk-icon="receiver"></span>
-                  <a class="uk-link-text" href="tel:+380680000000">+38 (068) 000 00 00</a>&nbsp;
-                  <a class="uk-link-text" href="tel:+380680000000">+38 (068) 000 00 00</a>
+                <li class="modules-block__content-item">
+                  <h3>EU Energy Law and Markets</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Strategic Thinking</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>EU Energy Regulation</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Project Management</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Low-Carbon Development and Sustainability in Energy</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Public Office Communication and Ethics</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Human Capital and Inclusive Development</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Energy Economics</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Energy Finance and Investments</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
+                </li>
+                <li class="modules-block__content-item">
+                  <h3>Завершальна зустріч</h3>
+                  <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <ul class="uk-list uk-list-bullet">
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident pariatur velit commodi ducimus incidunt libero iusto, eaque dolorem eveniet aliquam. At dignissimos sunt distinctio. Cumque voluptatibus laborum incidunt mollitia nobis nemo, illum amet officiis.</p>
+                  <p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small">Дізнатися більше</a>
+                  </p>
                 </li>
               </ul>
             </div>
-            <div class="page-footer__socials  uk-flex uk-flex-right">
-              <div class="socials  uk-width-4-5  uk-width@m  uk-flex uk-flex-between uk-flex-middle">
-                <a href="#" class="uk-icon-link uk-margin-right" uk-icon="instagram" title="Instagram"></a>
-                <a href="#" class="uk-icon-link uk-margin-right" uk-icon="facebook" title="Facebook"></a>
-                <a href="#" class="uk-icon-link uk-margin-right" uk-icon="twitter" title="Twitter"></a>
-                <a href="#" class="uk-icon-link" uk-icon="linkedin" title="Linkedin"></a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="intro-media  intro-media--bottom  uk-margin-xlarge-bottom">
+        <div class="uk-container">
+          <div class="intro-media__bg  uk-child-width-1-1  uk-child-width-1-2@m" data-uk-grid>
+
+            <div>
+              <h1>Приєднатися до програми</h1>
+              <p>Школа реалізується задля створення нової спільноти експертів з публічного управління енергетичним сектором в Україні, здатних та мотивованих впроваджувати енергетичне законодавство ЄС в Україні.</p>
+              <div class="intro-media__btn-wrapper  uk-margin-medium-top">
+                <p class="uk-text-bold">До закриття реєстрації залишилось <span id="time-left">___</span> днів</p>
+
+                <progress id="js-progressbar" class="uk-progress  uk-margin-medium-bottom" value="10" max="100"></progress>
+
+                <a href="program-modules.html" class="uk-button uk-button-default uk-button-small">Приєднатися</a>
               </div>
             </div>
+
+            <div>
+              <div class="intro-media__img-decor">
+                <div class="embed-responsive  embed-responsive--skewed  intro-media__img">
+                  <picture>
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 992px)">
+                    <!-- 580x260 -->
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 768px)">
+                    <!-- 461x207 -->
+                    <source srcset="img/intro-media-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/intro-media-img.jpg" media="(min-width: 480px)">
+                    <!-- 737x354 -->
+                    <source srcset="img/intro-media-img.webp" type="image/webp">
+                    <img src="img/intro-media-img.jpg" alt="Image name" width="450" height="202">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="intro-media__line"></div>
+            </div>
+
           </div>
         </div>
+
       </div>
-      <div class="uk-container">
-        <div class="page-footer__partners uk-flex-right uk-flex-between uk-flex-middle uk-child-width-auto">
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/1.png" alt="Logo">
-          </a>
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/2.png" alt="Logo">
-          </a>
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/3.png" alt="Logo">
-          </a>
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/3.png" alt="Logo">
-          </a>
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/1.png" alt="Logo">
-          </a>
-          <a href="#" class="uk-margin-small-right" title>
-            <img src="img/2.png" alt="Logo">
-          </a>
-        </div>
-        <div class="page-footer__bottom  uk-flex uk-flex-center uk-flex-middle uk-margin-bottom" data-uk-grid>
-          <span class="page-footer__owner  uk-width-1-1  uk-width-1-2@m uk-text-center uk-text-left@m">© 2020. Kyiv School of Energy Policy</span>
-          <span class="uk-width-auto  uk-width-1-2@m  uk-margin-remove-vertical  uk-text-right@m">
-            <a href="https://it-doors.com" class="page-footer__develop">
-              <img src="img/it-doors-logo.svg" alt="IT-Doors Outsourcing" target="_blank" rel="nofollow noopener" width="75" height="27">
-            </a>
-          </span>
-        </div>
-      </div>
-    </footer>
-  </div>  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">    <div class="uk-offcanvas-bar">      <button class="uk-offcanvas-close" type="button" uk-close></button>      <!--DEV      @ @include('blocks/offcanvas-menu/offcanvas-menu.html')      -->      <nav class="offcanvas-menu">        <ul class="offcanvas-menu__list  uk-nav">          <li class="uk-active"><a href="index.html">Головна</a></li>          <li><a href="programs.html">Програми</a></li>          <li><a href="contacts.html">Контакти</a></li>          <li><a href="faq.html">FAQ</a></li>        </ul>        <a href="#" class="offcanvas-menu__btn  uk-button uk-button-primary uk-button-small uk-margin-medium-top">Заявка на участь</a>        <span class="offcanvas-menu__copyrights">© 2020. Kyiv School of Energy Policy</span>      </nav>    </div>  </div>  <div id="search-modal-full" class="uk-modal-full uk-modal uk-padding-remove" uk-modal>    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>      <button class="uk-modal-close-full" type="button" uk-close></button>      <form class="uk-search uk-search-large">        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>      </form>    </div>  </div>  <script src="js/script.min.js"></script>
-</body></html>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      @@include('blocks/offcanvas-menu/offcanvas-menu.html')
+
+    </div>
+
+  </div>
+
+  <div id="search-modal-full" class="uk-modal-full uk-modal uk-padding-remove" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <button class="uk-modal-close-full" type="button" uk-close></button>
+      <form class="uk-search uk-search-large">
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>
+      </form>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
