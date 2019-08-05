@@ -3,7 +3,12 @@
   $block-name:                &; // #{$block-name}__element
 
   &__contents {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $bg-muted;
 
+    @media (min-width: $screen-lg) {
+      padding-bottom: 40px;
+    }
   }
 
   &__list {
@@ -27,12 +32,17 @@
 
     @media (min-width: $screen-md) {
       width: calc(50% - 17.5px);
+      margin-bottom: 30px;
     }
 
     a {
       font-size: 18px;
       font-weight: 700;
       text-decoration: underline;
+
+      @media (min-width: $screen-xl) {
+        font-size: 20px;
+      }
     }
   }
 

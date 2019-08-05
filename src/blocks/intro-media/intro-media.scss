@@ -3,13 +3,16 @@
   border-bottom: 1px solid $bg-muted;
 
   @media (min-width: 1230px) {
-    //background-color: red;
     background:
       linear-gradient(to right, $white, $white calc(50% + 30px), rgba(255, 255, 255, 0) calc(50% + 30px), rgba(255, 255, 255, 0) ),
       linear-gradient(to bottom, $second-color, $second-color 260.08px, $white 260.08px, $white 270px, $main-color 270px, $main-color 310px, $white 310px);
   }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__bg {
+    background-color: $white;
+  }
 
   &__img-decor {
     position: relative;

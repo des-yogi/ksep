@@ -3,7 +3,7 @@
 
   @media (min-width: $screen-xl) {
     padding: 0;
-    background: linear-gradient(to right, $second-color, $second-color calc(50% - 18.5px), $white calc(50% - 18.5px));
+    background: linear-gradient(to right, $second-color, $second-color 50%, $white 50%);
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -39,5 +39,9 @@
     & > * {
       color: $white;
     }
+  }
+
+  &__white-bg {
+    background-color: $white;
   }
 }

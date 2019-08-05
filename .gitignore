@@ -1,10 +1,13 @@
 design/
+docs/
+!node_modules/uikit/src/scss/variables-theme.scss
+!node_modules/uikit/src/scss/mixins-theme.scss
+!node_modules/uikit/src/scss/uikit-theme.scss
 
 .Saved/
 _arc/
 bower_components/
 node_modules/
-!node_modules/uikit/src/
 package-lock.json
 .vscode/
 .DS_Store
