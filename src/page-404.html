@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html class="page scaffolding" lang="Eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>KSEP - 404</title>
+  @@include('_include/page_head.html')
+  <meta name="description" content="">
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+
+    @@include('blocks/page-header/page-header.html')
+
+    <main class="main  main--noindex" role="main">
+
+      <div class="page-404  uk-margin-xlarge-bottom  uk-margin-xlarge-top">
+
+        <div class="uk-container">
+
+          <div class="uk-align-center">
+            <img class="page-404__img" src="img/error-404.svg" alt="Cторінка 404">
+            <h1 class="h1">На жаль, цієї сторінки не існує</h1>
+            <p class="uk-text-lead">Можливо, згодом це зміниться, але поки що пропонуємо Вам повернутися на головну сторінку.</p>
+            <p><a href="index.html" class="uk-button uk-button-default uk-button-small">Повернутися на головну</a></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    @@include('blocks/page-footer/page-footer.html')
+
+  </div>
+
+  <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+      @@include('blocks/offcanvas-menu/offcanvas-menu.html')
+
+    </div>
+
+  </div>
+
+  <div id="search-modal-full" class="uk-modal-full uk-modal uk-padding-remove" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <button class="uk-modal-close-full" type="button" uk-close></button>
+      <form class="uk-search uk-search-large">
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>
+      </form>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

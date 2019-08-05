@@ -1,0 +1,49 @@
+.contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  label {
+    cursor: pointer;
+  }
+
+  .uk-button[type=submit] {
+    width: 100%;
+  }
+
+  .uk-textarea {
+    min-height: 100px;
+  }
+
+  &__address-item {
+
+    a {
+      display: inline-block;
+      vertical-align: baseline;
+      margin-top: 10px;
+      color: $text-color;
+    }
+
+    h4 + p {
+      margin-top: 10px;
+    }
+  }
+
+  &__address-tel {
+    width: 100%;
+
+    & + & {
+
+      @media (min-width: $screen-sm) {
+        margin-left: 20px;
+      }
+    }
+
+    @media (min-width: $screen-sm) {
+      width: auto;
+    }
+  }
+
+  &__form-label {
+    margin-left: 5px;
+  }
+}
