@@ -74,6 +74,10 @@
     border-color: $second-color;
   }
 
+  .uk-list-bullet > li {
+    padding-left: calc(1.5em + 10px);
+  }
+
   ol {
   padding-left: 0;
   list-style: none;

@@ -1,27 +1,32 @@
 .logo {
   display: block;
   white-space: nowrap;
-  width: 219px;
-  min-height: 34px;
-  height: auto;
+  //width: 219px;
+  width: auto;
+  //min-height: 34px;
+  height: 34px;
   padding-right: 5px;
 
   @media (min-width: $screen-md) {
-    width: 258px;
-    //height: 40px;
-    height: auto;
+    //width: 258px;
+    width: auto;
+    height: 40px;
+    //height: auto;
   }
 
   @media (min-width: $screen-xl) {
-    width: 361px;
-    //height: 56px;
-    height: auto;
+    //width: 361px;
+    width: auto;
+    height: 56px;
+    //height: auto;
   }
 
   $block-name:                &; // #{$block-name}__element
 
   img {
-    width: 100%;
+    display: block;
+    width: auto;
+    height: 100%;
   }
 
   &--decor {
@@ -48,6 +53,14 @@
         right: -40px;
         width: 40px;
       }
+    }
+  }
+
+  &--footer {
+    height: 36px;
+
+    @media (min-width: $screen-md) {
+      height: 42px !important;
     }
   }
 }
