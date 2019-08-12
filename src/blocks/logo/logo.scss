@@ -1,24 +1,18 @@
 .logo {
   display: block;
   white-space: nowrap;
-  //width: 219px;
   width: auto;
-  //min-height: 34px;
   height: 34px;
   padding-right: 5px;
 
   @media (min-width: $screen-md) {
-    //width: 258px;
     width: auto;
     height: 40px;
-    //height: auto;
   }
 
   @media (min-width: $screen-xl) {
-    //width: 361px;
     width: auto;
     height: 56px;
-    //height: auto;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -36,7 +30,6 @@
       display: block;
       content: "";
       position: absolute;
-      //z-index: 1;
       top: 0;
       bottom: 0;
       right: -25px;
@@ -57,6 +50,8 @@
   }
 
   &--footer {
+    display: inline-block !important;
+    vertical-align: top;
     height: 36px;
 
     @media (min-width: $screen-md) {

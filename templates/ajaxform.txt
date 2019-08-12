@@ -1,0 +1,12 @@
+[[!AjaxForm?
+            &snippet=`FormIt`
+            &hooks=`recaptchav2,email`
+            &emailFrom=`noreply@koolbaba.com`
+            &form=`@FILE chunks/forms/contact_form.tpl`
+            &emailTpl=`@FILE chunks/emails/email_tpl.tpl`
+            &emailTo=`[[++email]],des.yogi@ukr.net`
+            &emailSubject=`[[$langs? &uk=`Повідомлення з сайту` &en=`Message from the site`]] [[++site_name]]`
+            &validate=`name:required,email:email:required,message:required,g-recaptcha-response:required`
+            &validationErrorMessage=`Пожалуйста, проверьте правильность заполнения полей формы`
+            &successMessage=`<strong>Сообщение успешно отправлено!</strong> <br>Наш представитель свяжеться с Вами в ближайшее время.`
+            ]]
