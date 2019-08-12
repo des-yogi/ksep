@@ -4,6 +4,24 @@
  * Не пишите сюда ничего вручную, все такие правки будут потеряны.
  * Читайте ./README.md для понимания.
  */
+@font-face {
+  font-display: swap;
+  font-family: 'Helvetica Neue';
+  src: local("Helvetica Neue Roman"), local("Helvetica-Neue-Roman"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-display: swap;
+  font-family: 'Helvetica Neue';
+  src: local("Helvetica Neue Medium"), local("Helvetica-Neue-Medium"), url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-display: swap;
+  font-family: 'Helvetica Neue';
+  src: local("Helvetica Neue Bold"), local("Helvetica-Neue-Bold"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -8630,6 +8648,8 @@ iframe.uk-cover {
       background: -o-linear-gradient(left bottom, #001770, #001770 50%, white 50%);
       background: linear-gradient(to right top, #001770, #001770 50%, white 50%); }
 .logo--footer {
+    display: inline-block !important;
+    vertical-align: top;
     height: 36px; }
 .embed-responsive {
   position: relative;
@@ -8729,14 +8749,47 @@ iframe.uk-cover {
 .partners__inner {
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5; }
+.team-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+.team-item .uk-card-media-top {
+    width: 100%; }
 .team-item .uk-card-media-top img {
-  -o-object-fit: cover;
-     font-family: "object-fit:cover;object-position:center";
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center; }
+      -o-object-fit: cover;
+         font-family: "object-fit:cover;object-position:center";
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
 .team-item .uk-card-body {
-  padding: 20px; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px; }
+.team-item__position {
+    margin-top: 0; }
+.team-item__email {
+    margin-top: auto; }
 .offcanvas-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8791,27 +8844,6 @@ iframe.uk-cover {
       width: calc(100% - 30px);
       height: 2px;
       background-color: #ffde00; }
-@font-face {
-  .scaffolding {
-    font-display: fallback;
-    font-family: 'Helvetica Neue';
-    src: local("Helvetica Neue Roman"), local("Helvetica-Neue-Roman"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
-    font-weight: 400;
-    font-style: normal; } }
-@font-face {
-  .scaffolding {
-    font-display: fallback;
-    font-family: 'Helvetica Neue';
-    src: local("Helvetica Neue Medium"), local("Helvetica-Neue-Medium"), url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal; } }
-@font-face {
-  .scaffolding {
-    font-display: fallback;
-    font-family: 'Helvetica Neue';
-    src: local("Helvetica Neue Bold"), local("Helvetica-Neue-Bold"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal; } }
 .scaffolding .main.main--noindex {
   padding-top: 20px; }
 .scaffolding .visually-hidden {
@@ -10027,8 +10059,8 @@ iframe.uk-cover {
       .about-program__text {
         padding-right: 40px;
         padding-left: 0; }
-    .team-item .uk-card-body {
-      padding: 30px 20px; }
+      .team-item .uk-card-body {
+        padding: 30px 20px; }
       .intro-media__img-decor {
         -webkit-box-shadow: 30px 0 0 0 #001770;
                 box-shadow: 30px 0 0 0 #001770; }
@@ -10077,6 +10109,16 @@ iframe.uk-cover {
     .intro-media {
       background: -o-linear-gradient(left, white, white calc(50% + 30px), rgba(255, 255, 255, 0) calc(50% + 30px), rgba(255, 255, 255, 0)), -o-linear-gradient(top, #001770, #001770 260.08px, white 260.08px, white 270px, #ffde00 270px, #ffde00 310px, white 310px);
       background: linear-gradient(to right, white, white calc(50% + 30px), rgba(255, 255, 255, 0) calc(50% + 30px), rgba(255, 255, 255, 0)), linear-gradient(to bottom, #001770, #001770 260.08px, white 260.08px, white 270px, #ffde00 270px, #ffde00 310px, white 310px); } }
+@media (max-width: 479px) {
+  .uk-notification {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0; }
+  .uk-background-image\@s {
+    background-image: none !important; }
+  .uk-visible\@s {
+    display: none !important; } }
 @media (max-width: 767px) {
   .uk-table-responsive,
   .uk-table-responsive tbody,
@@ -10112,16 +10154,6 @@ iframe.uk-cover {
   .uk-background-image\@m {
     background-image: none !important; }
   .uk-visible\@m {
-    display: none !important; } }
-@media (max-width: 479px) {
-  .uk-notification {
-    left: 10px;
-    right: 10px;
-    width: auto;
-    margin: 0; }
-  .uk-background-image\@s {
-    background-image: none !important; }
-  .uk-visible\@s {
     display: none !important; } }
 @media (pointer: coarse) {
   .uk-background-fixed {
