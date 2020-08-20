@@ -7,4 +7,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  li {
+    max-width: 100%;
+
+    a,
+    span {
+      display: inline;
+    }
+  }
 }

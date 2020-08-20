@@ -1,0 +1,18 @@
+.announcement {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__body {
+    padding: 20px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+    }
+  }
+}

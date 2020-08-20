@@ -31,3 +31,17 @@
       }
   }, 1000);
 });*/
+
+/*(function () {
+  var bar = document.getElementById("js-progressbar");
+  var daysLeftField = document.querySelector(".time-left");
+  if (!bar) {
+    return;
+  }
+  var dateStart = parseFloat(bar.dataset.start);
+  var dateEnd = parseFloat(bar.dataset.end);
+  var dateCurrent = parseFloat(bar.dataset.current);
+  var daysLeft = dateEnd - dateCurrent;
+  bar.value = ((dateCurrent - dateStart) / (dateEnd - dateStart)) * 100;
+  daysLeftField.textContent = daysLeft + "";
+})();*/
