@@ -1,0 +1,23 @@
+.reviews {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .uk-slider-items li {
+    user-select: none;
+    //cursor: move;
+    cursor: hand;
+  }
+
+  .announcement__body {
+
+    @media (min-width: $screen-lg) {
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+  }
+}
