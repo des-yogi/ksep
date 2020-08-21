@@ -9079,6 +9079,14 @@ iframe.uk-cover {
     max-width: 290px; }
 .announcement__body {
   padding: 20px; }
+.reviews .uk-slider-items li {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: hand; }
+.reviews blockquote {
+  margin: 0; }
 @media (min-width: 480px) {
   .uk-container {
     padding-left: 15px;
@@ -9593,8 +9601,8 @@ iframe.uk-cover {
       .page-404 .uk-text-lead {
         padding: 0 40px; }
     .announcement__body {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       padding-left: 40px; } }
 @media (min-width: 992px) {
   .uk-heading-medium {
@@ -9903,7 +9911,11 @@ iframe.uk-cover {
     .faq__contents {
       padding-bottom: 40px; }
     .announcement__body {
-      padding-left: 0; } }
+      padding-left: 0; }
+  .reviews .announcement__body {
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
 @media (min-width: 1200px) {
   .uk-child-width-1-1\@xl > * {
     width: 100%; }

@@ -25,7 +25,8 @@
     "article": [],
     "contacts": [],
     "page-404": [],
-    "announcement": []
+    "announcement": [],
+    "reviews": []
   },
   "addCssBefore": [
     "../../node_modules/uikit/src/scss/variables-theme.scss",
