@@ -9087,6 +9087,29 @@ iframe.uk-cover {
   cursor: hand; }
 .reviews blockquote {
   margin: 0; }
+.hero {
+  position: relative;
+  color: white;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url(../img/hero-bg-mob@1x.jpg); }
+.hero__title {
+    display: inline-block;
+    vertical-align: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 50px; }
+.hero__left .hero__title, .hero__right .hero__title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
+.hero__left .hero__title {
+    color: white;
+    background-color: #001770; }
+.hero__right .hero__title {
+    background-color: #ffde00; }
 @media (min-width: 480px) {
   .uk-container {
     padding-left: 15px;
@@ -9603,6 +9626,33 @@ iframe.uk-cover {
     .announcement__body {
       padding-top: 25px;
       padding-bottom: 25px;
+      padding-left: 40px; }
+    .hero {
+      background-image: url(../img/hero-bg-tabl@1x.jpg); }
+    .hero__left, .hero__right {
+      padding-top: 45px;
+      padding-bottom: 45px; }
+    .hero__left p, .hero__right p {
+      font-size: 18px; }
+    .hero__left {
+      text-align: right; }
+    .hero__left .hero__inner {
+      padding-right: 40px; }
+      .hero__left .hero__title {
+        padding-left: 50px;
+        padding-right: 25px; }
+    .hero__right {
+      position: relative; }
+    .hero__right::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 19px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #ffde00; }
+    .hero__right .hero__inner {
       padding-left: 40px; } }
 @media (min-width: 992px) {
   .uk-heading-medium {
@@ -10134,7 +10184,14 @@ iframe.uk-cover {
       .page-404 .uk-text-lead {
         padding: 0 205px; }
       .page-404__img {
-        max-width: 350px; } }
+        max-width: 350px; }
+    .hero {
+      background-image: url(../img/hero-bg-desk@1x.jpg); }
+    .hero__left, .hero__right {
+      padding-top: 75px;
+      padding-bottom: 75px; }
+    .hero__left p, .hero__right p {
+      font-size: 20px; } }
 @media (min-width: 1230px) {
     .intro-media {
       background: -o-linear-gradient(left, white, white calc(50% + 30px), rgba(255, 255, 255, 0) calc(50% + 30px), rgba(255, 255, 255, 0)), -o-linear-gradient(top, #001770, #001770 260.08px, white 260.08px, white 270px, #ffde00 270px, #ffde00 310px, white 310px);
