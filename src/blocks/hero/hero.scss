@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  color: $white;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url(../img/hero-bg-mob@1x.jpg);
+
+  @media (min-width: $screen-md) {
+    background-image: url(../img/hero-bg-tabl@1x.jpg);
+  }
+
+  @media (min-width: $screen-xl) {
+    background-image: url(../img/hero-bg-desk@1x.jpg);
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    display: inline-block;
+    vertical-align: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+
+  &__left,
+  &__right {
+
+    @media (min-width: $screen-md) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+
+    #{$block-name}__title {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+
+      @media (min-width: $screen-md) {
+        font-size: 18px;
+      }
+
+      @media (min-width: $screen-xl) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__left {
+
+    @media (min-width: $screen-md) {
+      text-align: right;
+    }
+
+    #{$block-name}__inner {
+
+      @media (min-width: $screen-md) {
+        padding-right: 40px;
+      }
+    }
+
+    #{$block-name}__title {
+      color: $white;
+      background-color: $second-color;
+
+      @media (min-width: $screen-md) {
+        padding-left: 50px;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  &__right {
+
+    @media (min-width: $screen-md) {
+      position: relative;
+    }
+
+    &::before {
+
+      @media (min-width: $screen-md) {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 19px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: $main-color;
+      }
+    }
+
+    #{$block-name}__inner {
+
+      @media (min-width: $screen-md) {
+        padding-left: 40px;
+      }
+    }
+
+    #{$block-name}__title {
+      background-color: $main-color;
+    }
+  }
+}
