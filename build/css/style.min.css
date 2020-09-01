@@ -8678,6 +8678,8 @@ iframe.uk-cover {
        object-position: center; }
 .embed-responsive--4-3::before {
     padding-top: 75%; }
+.embed-responsive--1-1::before {
+    padding-top: 100%; }
 .embed-responsive--skewed::before {
     padding-top: 44.84305%; }
 .burger__wrapper {
@@ -8895,6 +8897,8 @@ iframe.uk-cover {
 .scaffolding .error {
   font-size: 12px;
   color: red; }
+.scaffolding mark {
+  background: #ffde00; }
 .intro-media {
   padding-bottom: 40px;
   border-bottom: 1px solid #e5e5e5; }
