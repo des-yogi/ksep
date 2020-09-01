@@ -27,7 +27,8 @@
     "page-404": [],
     "announcement": [],
     "reviews": [],
-    "hero": []
+    "hero": [],
+    "graduates-review": []
   },
   "addCssBefore": [
     "../../node_modules/uikit/src/scss/variables-theme.scss",
