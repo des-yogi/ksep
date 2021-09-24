@@ -8582,33 +8582,33 @@ iframe.uk-cover {
 .page-footer .uk-link-text:hover, .page-footer .uk-link-text:focus {
     color: #0f6ecd; }
 .page-footer__social-bg {
-  margin-bottom: 40px;
-  background: -o-linear-gradient(left, white, white 50%, transparent 50%), -o-linear-gradient(bottom, #ffde00, #ffde00 40px, white 40px);
-  background: linear-gradient(to right, white, white 50%, transparent 50%), linear-gradient(to top, #ffde00, #ffde00 40px, white 40px); }
+  margin-bottom: 40px; }
 .page-footer__text .uk-list {
   font-size: 14px; }
+.page-footer__socials {
+  position: relative; }
 .page-footer__socials .socials {
-  position: relative;
-  padding: 10px 35px;
-  margin-right: 0;
-  background-color: #ffde00; }
+    position: relative;
+    padding: 10px 35px;
+    margin-right: 0;
+    background-color: #ffde00; }
 .page-footer__socials .socials::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -30px;
-    width: 30px;
-    height: 100%;
-    background-color: red;
-    background: -webkit-gradient(linear, right top, left bottom, from(#ffde00), color-stop(50%, #ffde00), color-stop(50%, white));
-    background: -o-linear-gradient(top right, #ffde00, #ffde00 50%, white 50%);
-    background: linear-gradient(to bottom left, #ffde00, #ffde00 50%, white 50%); }
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -30px;
+      width: 30px;
+      height: 100%;
+      background-color: red;
+      background: -webkit-gradient(linear, right top, left bottom, from(#ffde00), color-stop(50%, #ffde00), color-stop(50%, white));
+      background: -o-linear-gradient(top right, #ffde00, #ffde00 50%, white 50%);
+      background: linear-gradient(to bottom left, #ffde00, #ffde00 50%, white 50%); }
 .page-footer__socials .uk-icon-link {
-  color: #2d3137; }
+    color: #2d3137; }
 .page-footer__socials .uk-icon-link:hover, .page-footer__socials .uk-icon-link:focus {
-    color: #0f6ecd; }
+      color: #0f6ecd; }
 .page-footer__partners a {
   display: inline-block;
   vertical-align: top;
@@ -8621,6 +8621,14 @@ iframe.uk-cover {
   opacity: 0.5; }
 .page-footer__develop:hover, .page-footer__develop:focus {
     opacity: 0.8; }
+.page-footer__pay-systems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px; }
 .logo {
   display: block;
   white-space: nowrap;
@@ -9543,10 +9551,10 @@ iframe.uk-cover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .page-footer__socials {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    .page-footer__socials {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
     .page-footer__partners a:last-child {
       margin-right: 0 !important; }
     .page-footer__partners a {
@@ -10121,9 +10129,9 @@ iframe.uk-cover {
     background: -webkit-gradient(linear, left top, right top, from(#001770), color-stop(50%, #001770), color-stop(50%, white));
     background: -o-linear-gradient(left, #001770, #001770 50%, white 50%);
     background: linear-gradient(to right, #001770, #001770 50%, white 50%); }
-    .page-footer__socials .socials {
-      padding: 10px 40px;
-      max-width: 290px; }
+      .page-footer__socials .socials {
+        padding: 10px 40px;
+        max-width: 290px; }
     .logo {
       width: auto;
       height: 56px; }
@@ -10235,7 +10243,16 @@ iframe.uk-cover {
   .uk-background-image\@m {
     background-image: none !important; }
   .uk-visible\@m {
-    display: none !important; } }
+    display: none !important; }
+    .page-footer__socials::after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background-color: #ffde00; } }
 @media (max-width: 479px) {
   .uk-notification {
     left: 10px;
