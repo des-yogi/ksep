@@ -8,6 +8,5 @@
 * https://des-yogi.github.io/ksep/contacts
 * https://des-yogi.github.io/ksep/faq
 * https://des-yogi.github.io/ksep/graduates
-* https://des-yogi.github.io/ksep/community
 * https://des-yogi.github.io/ksep/text-page
 * https://des-yogi.github.io/ksep/page-404
