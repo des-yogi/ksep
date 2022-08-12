@@ -8,10 +8,11 @@ const browserSync = require('browser-sync').create();
 const realFavicon = require ('gulp-real-favicon');
 
 const postcss = require('gulp-postcss');
+const removeComments = require('postcss-discard-comments');
 const autoprefixer = require("autoprefixer");
 const mqpacker = require("css-mqpacker");
 const atImport = require("postcss-import");
-const cleanss = require('gulp-cleancss');
+const csso = require('gulp-csso');
 const inlineSVG = require('postcss-inline-svg');
 const objectFitImages = require('postcss-object-fit-images');
 
@@ -59,6 +60,10 @@ let postCssPlugins = [
   objectFitImages(),
 ];
 
+let discardComments = [
+  removeComments(),
+]
+
 // Очистка папки сборки
 gulp.task('clean', function () {
   console.log('---------- Очистка папки сборки');
@@ -70,7 +75,7 @@ gulp.task('clean', function () {
 
 // Компиляция стилей блоков проекта (и добавочных)
 gulp.task('style', function () {
-  const sass = require('gulp-sass');
+  const sass = require('gulp-sass')(require('node-sass'));
   const sourcemaps = require('gulp-sourcemaps');
   const wait = require('gulp-wait');
   console.log('---------- Компиляция стилей');
@@ -89,7 +94,14 @@ gulp.task('style', function () {
     .pipe(debug({title: "Style:"}))
     .pipe(sass())
     .pipe(postcss(postCssPlugins))
-    .pipe(gulpIf(!isDev, cleanss()))
+    .pipe(gulpIf(isDev,
+      postcss(discardComments)
+    ))
+    .pipe(gulpIf(!isDev,
+      csso({
+        restructure: false,
+      })
+    ))
     .pipe(rename('style.min.css'))
     .pipe(gulpIf(isDev, sourcemaps.write('/')))
     .pipe(size({
@@ -104,7 +116,7 @@ gulp.task('style', function () {
 // Компиляция отдельных файлов
 gulp.task('style:single', function (callback) {
   if(projectConfig.singleCompiled.length) {
-    const sass = require('gulp-sass');
+    const sass = require('gulp-sass')(require('node-sass'));
     const sourcemaps = require('gulp-sourcemaps');
     const wait = require('gulp-wait');
     console.log('---------- Компиляция добавочных стилей');
@@ -123,7 +135,11 @@ gulp.task('style:single', function (callback) {
       .pipe(debug({title: "Single style:"}))
       .pipe(sass())
       .pipe(postcss(postCssPlugins))
-      .pipe(gulpIf(!isDev, cleanss()))
+      .pipe(gulpIf(!isDev,
+        csso({
+          restructure: false,
+        })
+      ))
       .pipe(gulpIf(isDev, sourcemaps.write('/')))
       .pipe(size({
         title: 'Размер',
@@ -143,7 +159,9 @@ gulp.task('copy:css', function(callback) {
   if(projectConfig.copiedCss.length) {
     return gulp.src(projectConfig.copiedCss)
       .pipe(postcss(postCssPlugins))
-      .pipe(cleanss())
+      .pipe(csso({
+        restructure: false,
+      }))
       .pipe(size({
         title: 'Размер',
         showFiles: true,
@@ -284,9 +302,10 @@ gulp.task('sprite:svg', function (callback) {
         .pipe(svgmin(function (file) {
           return {
             plugins: [{
-              cleanupIDs: {
-                minify: true
-              }
+              name: 'cleanupIDs',
+              params: {
+                minify: true,
+              },
             }]
           }
         }))
@@ -385,7 +404,7 @@ gulp.task('html', function() {
 
 // Конкатенация и углификация Javascript
 gulp.task('js', function (callback) {
-  const uglify = require('gulp-uglify');
+  const uglify = require('gulp-uglify-es').default;// добавлен default
   const concat = require('gulp-concat');
   if(lists.js.length > 0){
     console.log('---------- Обработка JS');
@@ -469,7 +488,7 @@ gulp.task('serve', gulp.series('build', function() {
 
   browserSync.init({
     server: dirs.buildPath,
-    port: 8080,
+    port: 3000,
     startPath: 'index.html',
     open: true,
   });
@@ -590,7 +609,7 @@ function getFilesList(config){
       }
 
       // Картинки (тупо от всех блоков, без проверки)
-      res.img.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/img/*.{jpg,jpeg,gif,png,svg,webp}');
+      res.img.push(config.dirs.srcPath + config.dirs.blocksDirName + '/' + blockName + '/img/*.{jpg,jpeg,gif,png,webp,svg}');
 
       // Список директорий
       res.blocksDirs.push(config.dirs.blocksDirName + '/' + blockName + '/');
